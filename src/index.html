@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fashion Clothes</title>
+  <script type="module" src="./main.js"></script>
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="./assets/sass/style.scss">
+
+</head>
+
+<body>
+  <div id="app">
+    <div class="bg">
+      <div class="circle"></div>
+    </div>
+
+    <div class="image-wrapper">
+      <div id="image-1" class="image active"></div>
+      <div id="image-2" class="image2"></div>
+      <div id="image-3" class="image3"></div>
+      <div id="image-4" class="image4"></div>
+    </div>
+
+    <nav class="navbar">
+      <div class="navbar-title">fashion</div>
+
+      <div class="navbar-categories">
+        <ul>
+          <li>home</li>
+          <li>store</li>
+          <li>collections</li>
+          <li>lookbook</li>
+        </ul>
+      </div>
+
+      <div class="navbar-social">
+        <div class="heart">
+          <img src="./assets/svg/heart.svg" alt="heart" />
+        </div>
+
+        <div class="cart">
+          <img src="./assets/svg/cart.svg" alt="cart" />
+        </div>
+
+        <div class="profile">
+          <img src="./assets/svg/profile.svg" alt="profile" />
+        </div>
+      </div>
+    </nav>
+
+    <div class="media">
+      <div>
+        <span class="hide-md">Collection</span>
+      </div>
+      <ul>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+      </ul>
+    </div>
+
+    <div>
+      <h1 class="title-category">STREET</h1>
+    </div>
+
+    <div class="text">
+      <h1>
+        <span class="hidetext">Collection</span>
+      </h1>
+    </div>
+
+    <div class="number">
+      <h2>
+        <span class="hidetext counter">01</span>
+      </h2>
+    </div>
+
+
+    <div class="scrolldown">
+      <img src="./assets/svg/instagram.svg" alt="instagram" />
+      <img src="./assets/svg/twitter.svg" alt="twitter" />
+      <img src="./assets/svg/facebook.svg" alt="facebook" />
+    </div>
+
+    <div class="bottomnav">
+      <button class="button-prev">
+        <svg width="26" height="39" viewBox="0 0 26 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M26 37.7731L2.64225 19.5L26 1.26913L24.9941 0L0 19.5L25.0104 39L26 37.7731Z" fill="#F4F4F4" />
+        </svg>
+
+      </button>
+      <button class="button-next">
+        <svg width="26" height="39" viewBox="0 0 26 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0 1.22687L23.3577 19.5L0 37.7309L1.00587 39L26 19.5L0.989625 0L0 1.22687Z" fill="#F4F4F4" />
+        </svg>
+
+      </button>
+    </div>
+  </div>
+
+
+
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+    integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"
+    integrity="sha512-yVNhaX0I/lk5GtKya9lE27DopFWV791zsCnMpztLnGJgWESdN825wbH0/I1HfwdNgAKFsq9pXv5vpXjTAU7h3A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>

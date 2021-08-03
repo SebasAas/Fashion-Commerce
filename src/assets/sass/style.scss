@@ -1,0 +1,446 @@
+@import url(fonts.scss);
+@import "variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.app {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+/* BACKGROUND
+=========================== */
+.bg {
+  position: absolute;
+  left: 0%;
+  width: 0%;
+  height: 100%;
+  background: #eb2727;
+  z-index: -1;
+
+  .circle {
+    position: absolute;
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    height: 0;
+    width: 0;
+    background-color: #ec3939;
+    border: 0px solid transparent;
+    border-radius: 100%;
+    z-index: 2;
+    transition: all 0.5 ease-in;
+    transform: translate(-20%, -50%);
+
+    @media (max-width: $m-max) {
+      transition: all 0.5 ease-in;
+      height: 25em !important;
+      width: 25em !important;
+    }
+
+    @media (max-width: 680px) {
+      display: none;
+    }
+  }
+}
+
+/* NAVBAR
+=========================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  padding: 0 50px;
+
+  &-title {
+    font-family: "Albert";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    width: 15%;
+  }
+
+  &-categories {
+    width: 70%;
+    padding: 0 100px;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+
+      li {
+        font-family: "Julius";
+        font-size: 1rem;
+        text-transform: uppercase;
+      }
+    }
+
+    @media (max-width: 950px) {
+      display: none;
+    }
+  }
+
+  &-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+
+    .heart {
+      margin-right: 3.77rem;
+
+      img {
+        height: 20px;
+        width: 20px;
+      }
+    }
+
+    .cart {
+      margin-right: 3.77rem;
+
+      img {
+        height: 23px;
+        width: 23px;
+      }
+    }
+
+    .profile {
+      img {
+        height: 20px;
+        width: 20px;
+      }
+    }
+
+    @media (max-width: 1150px) {
+      justify-content: center;
+      align-items: center;
+      width: 25%;
+    }
+
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+}
+
+/* TITLE
+=========================== */
+.title {
+  &-category {
+    position: absolute;
+    top: 50px;
+    font-weight: 800;
+    font-size: 6rem;
+    line-height: 103px;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    margin-left: 1.5em;
+
+    @media (max-width: $s-max) {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      margin-top: 30px;
+      font-size: 4rem;
+    }
+  }
+}
+
+.hide-md {
+  display: none;
+
+  @media (max-width: $s-max) {
+    display: block;
+    text-align: center;
+    font-family: "Tinos";
+    font-weight: 800;
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+/* SOCIAL MEDIA
+=========================== */
+.media {
+  position: absolute;
+  top: 350px;
+  right: -90px;
+  transform: rotate(-90deg);
+
+  ul li {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    @media (max-width: $s-max) {
+      display: none;
+    }
+  }
+}
+
+/* IMAGES
+=========================== */
+.image-wrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+
+  .image {
+    position: absolute;
+    top: 0;
+    right: -850px;
+    background: url("../images/girl-01.png") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    width: 42em;
+    opacity: 0;
+    animation: image-appear 0.0001s linear forwards;
+    animation-delay: 2.2s;
+
+    @media (max-width: $s-max) {
+      background-position: 180px;
+    }
+  }
+
+  .image2 {
+    position: absolute;
+    right: -850px;
+    background: url("../images/girl-02.png") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    width: 43em;
+    opacity: 0;
+    animation: image-appear 0.0001s linear forwards;
+    animation-delay: 2.2s;
+
+    @media (max-width: $s-max) {
+      background-position: 180px;
+    }
+  }
+
+  .image3 {
+    position: absolute;
+    top: 0;
+    right: -850px;
+    background: url("../images/girl-03.png") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    width: 42em;
+    opacity: 0;
+    animation: image-appear 0.0001s linear forwards;
+    animation-delay: 2.2s;
+
+    @media (max-width: $s-max) {
+      background-position: 235px;
+    }
+  }
+
+  .image4 {
+    position: absolute;
+    right: -850px;
+    background: url("../images/girl-04.png") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    width: 38em;
+    opacity: 0;
+    animation: image-appear 0.0001s linear forwards;
+    animation-delay: 2.2s;
+
+    @media (max-width: $s-max) {
+      background-position: 85px;
+    }
+  }
+}
+
+@keyframes image-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* NUMBER
+=========================== */
+
+.number {
+  position: absolute;
+  display: flex;
+  right: 0;
+  bottom: calc(100% - 80%);
+  left: 35%;
+  width: 230px;
+  overflow: hidden;
+
+  h2 {
+    font-family: "Tinos";
+    font-weight: 700;
+    font-size: 230px;
+    height: 230px;
+    text-transform: uppercase;
+    margin: 0;
+
+    .hidetext {
+      position: absolute;
+    }
+
+    @media (max-width: $l-min) {
+      font-size: 200px;
+    }
+  }
+
+  @media (max-width: $m-min) {
+    font-size: 190px;
+  }
+
+  @media (max-width: $s-max) {
+    display: block;
+    left: 50%;
+    right: 50%;
+    transform: translate(-45%, -50%);
+    bottom: 0%;
+  }
+}
+
+/* ARROWS
+=========================== */
+.bottomnav {
+  position: absolute;
+  width: 700px;
+  display: flex;
+  right: 0;
+  bottom: 2%;
+  left: 35%;
+  width: 300px;
+  overflow: hidden;
+  justify-content: space-between;
+
+  .button {
+    &-prev,
+    &-next {
+      cursor: pointer;
+      height: 140px;
+      width: 140px;
+      background: transparent;
+      border: 1px solid #f4f4f4;
+
+      @media (max-width: $s-max) {
+        height: 100px;
+        width: 100px;
+      }
+    }
+  }
+
+  @media (max-width: $m-min) {
+    right: 50%;
+    bottom: -3%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  @media (max-width: $s-max) {
+    justify-content: space-evenly;
+  }
+}
+
+/* VERTICAL TEXT
+=========================== */
+.text {
+  position: absolute;
+  width: 700px;
+  display: flex;
+  right: 0;
+  bottom: 58%;
+  left: 30%;
+  transform: rotate(-90deg);
+  overflow: hidden;
+
+  h1 {
+    font-family: "Tinos";
+    font-weight: 800;
+    font-size: 2.94rem;
+    line-height: 54px;
+    letter-spacing: 0.7em;
+    height: 55px;
+    width: 100vw;
+    text-transform: uppercase;
+    margin: 0;
+
+    .hidetext {
+      position: absolute;
+    }
+
+    @media (max-width: $l-max) {
+      font-size: 2.3rem;
+    }
+  }
+  @media (max-width: $l-max) {
+    bottom: 70%;
+  }
+
+  @media (max-width: $s-max) {
+    display: none;
+  }
+}
+
+/* SCROLLDOWN
+=========================== */
+.scrolldown {
+  opacity: 1;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+
+  position: absolute;
+  bottom: 50%;
+  left: -160px;
+  transform: rotate(-90deg);
+
+  img {
+    transform: rotate(90deg);
+    padding: 0 10px;
+  }
+}
+
+.scrolldown::after {
+  content: "";
+  border: 1px solid #f4f4f4;
+  background-color: #f4f4f4;
+  width: 230px;
+  margin: 0 20px 0 0;
+  transform: translate(30px, -10px);
+  display: inline-block;
+}
