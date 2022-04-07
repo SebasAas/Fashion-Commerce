@@ -3,7 +3,7 @@
 ### Preview
 ![Preview](src/assets/images/preview.gif)
 
-## Getting Started
+## Getting Started 
 Single Page - Multi Step Image
 ### Installing
 Run the following command to install the dependencies
